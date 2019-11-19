@@ -3,11 +3,40 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="testNG.Tipscrossbrowser">
+        <methods>
+          <include name="binvokebrowser"/>
+          <include name="dclosebrowswer"/>
+          <include name="csubmitorder"/>
+        </methods>
+      </class> <!-- testNG.Tipscrossbrowser -->
+      <class name="testNG.TipsCB_TS_Size">
+        <methods>
+          <include name="binvokebrowser"/>
+          <include name="ctiresearch"/>
+          <include name="dclosebrowswer"/>
+        </methods>
+      </class> <!-- testNG.TipsCB_TS_Size -->
+      <class name="testNG.TipsTest">
+        <methods>
+          <include name="c"/>
+        </methods>
+      </class> <!-- testNG.TipsTest -->
+      <class name="testNG.cars_debug">
+        <methods>
+          <include name="runSikuli"/>
+        </methods>
+      </class> <!-- testNG.cars_debug -->
       <class name="testNG.Sikuli_test">
         <methods>
           <include name="runSikuli"/>
         </methods>
       </class> <!-- testNG.Sikuli_test -->
+      <class name="testNG.Readexcel">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- testNG.Readexcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
